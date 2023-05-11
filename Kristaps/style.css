@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--lcol);
+}
+html{
+    --aug:100px;
+}
+html[data-togl="light"]{
+    --col:orange;
+    --col2:wheat;
+}
+html[data-togl="dark"]{
+    --col:gray;
+    --col2:#222222;
+    --lcol:white;
+}
+header{
+    width: 100vw;
+    height: var(--aug);
+    background-color: var(--col);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+#cbox{
+    width: 50px;
+    height: 50px;
+}
+#switch{
+    width: 50px;
+    height: 50px;
+}
+main{
+    height: 100vh;
+    background-color: var(--col2);
+    margin-top: var(--aug);
+}
